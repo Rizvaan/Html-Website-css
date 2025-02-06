@@ -1,0 +1,261 @@
+/* General Styles for the body */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+.logo{
+    text-decoration: none;
+    color: white;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+}
+
+header .logo img {
+    width: 50px;
+    height: auto;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-icons a {
+    color: #fff;
+    margin-left: 15px;
+    font-size: 24px;
+}
+
+.bx-menu {
+    display: none;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.home-text h6, .home-text h1, .home-text p {
+    margin: 10px 0;
+}
+
+.home-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.container-box {
+    width: 32%;
+    text-align: center;
+}
+
+.container-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container-text h4 {
+    margin-top: 15px;
+}
+
+/* Categories Section */
+.categories {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.catogories-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 22%;
+    text-align: center;
+}
+
+.box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-btn .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.main-btn .btn:hover {
+    background-color: #555;
+}
+
+/* Products Section */
+.products {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.product-content .row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+
+.product-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.courses-text h2 {
+    margin-top: 10px;
+}
+
+.main-btn a {
+    background-color: green;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.contact-content li {
+    list-style: none;
+}
+
+.contact-content li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.last-text {
+    background-color: #333;
+    color: #fff;
+}
+
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .container-box {
+        width: 100%;
+    }
+
+    .catogories-content {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .header-icons .bx-menu {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .main-btn .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .categories .catogories-content {
+        flex-direction: column;
+    }
+
+    .products .product-content .row {
+        flex-direction: column;
+    }
+}
